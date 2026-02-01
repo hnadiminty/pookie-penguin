@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💘 Shaurya’s Valentine?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-hearts"></div>
+
+  <main class="wrap">
+    <section class="card" id="card">
+      <div class="top">
+        <h1 id="title"></h1>
+        <p id="subtitle"></p>
+      </div>
+
+      <div class="photo" id="photoWrap"></div>
+
+      <div class="content" id="content"></div>
+      <div class="actions" id="actions"></div>
+
+      <p class="hint" id="hint">Tip: turn your sound on 🔊</p>
+    </section>
+
+    <!-- Runaway NO (only shown on final step) -->
+    <button id="noBtn" class="btn btn-no">No 🙄</button>
+
+    <!-- Sounds -->
+    <audio id="sClick" src="assets/sounds/click.mp3" preload="auto"></audio>
+    <audio id="sSuccess" src="assets/sounds/success.mp3" preload="auto"></audio>
+    <audio id="sNope" src="assets/sounds/nope.mp3" preload="auto"></audio>
+    <audio id="sSad" src="assets/sounds/sad.mp3" preload="auto"></audio>
+
+
+    <!-- Popup modal -->
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal">
+        <p id="modalText"></p>
+        <div class="modal-actions">
+          <button class="btn btn-yes" id="modalOk">Okay 💖</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
